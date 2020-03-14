@@ -18,3 +18,12 @@ require("channels")
 //= require jquery3
 //= require popper
 //= require bootstrap
+//= require jquery
+//= require jquery_ujs
+//= require_tree .
+
+$(document).on('turbolinks:load', function(){
+    $(".qustion_num").click(function(){
+        $(".qustion_num").css("color","Red");
+    });
+});

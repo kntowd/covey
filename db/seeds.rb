@@ -8,10 +8,7 @@
 
 # coding: utf-8
 
-Question.create(:text => '好きな洋服のスタイルはどれですか？')
-Choice.create(:text => "きれいめ",:question_id => "1")
-Choice.create(:text => "ストリート",:question_id => "1")
-Choice.create(:text => "モード",:question_id => "1")
-Choice.create(:text => "カジュアル",:question_id => "1")
+
+
 
 
