@@ -9,6 +9,28 @@
 # coding: utf-8
 
 
+# array = ["crepuscule","JUHA","AURALEE"]
+# array.each_with_index do |brand,i|
+#     Brand.create!(
+#         name: "#{brand}",
+#         choice_id: "#{i+5}"
+#     )
+# end
 
+# array = ["NEEDLES","BlackWeirdos","MAGRIANO"]
+# array.each_with_index do |brand,i|
+#     Brand.create!(
+#         name: "#{brand}",
+#         choice_id: "#{i+8}"
+#     )
+# end
+
+# array = ["モードブランドは基本高い！","COMME des GARCONS","Maison Margiera","Brooks Brothers","NEON SIGN","amachi."]
+# array.each_with_index do |brand,i|
+#     Brand.create!(
+#         name: "#{brand}",
+#         choice_id: "#{i+11}"
+#     )
+# end
 
 
