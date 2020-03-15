@@ -4,7 +4,7 @@
     <h4><%= @question.text %></h4>
     <% @choices.each do |choice| %>
     <button class = "btn btn-outline-primary">
-        <%= link_to "#{choice.text}", "/questions/#{choice.id+15}", method: :get %>
+        <%= link_to "#{choice.text}", "/questions/#{choice.id+1}", method: :get %>
     </button>
     </br>
     <% end %>
