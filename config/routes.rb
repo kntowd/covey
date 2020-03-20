@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'index#top'
   post "group_workings/:id" => "group_workings#create"
   get "questions/:id" => "questions#show"
+  get "brand/show" => "brand#show"
 end
