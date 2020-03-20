@@ -1,6 +1,6 @@
 
 <div class = "container question-field">
-    <h3 class="qustion_num">Question1</h3>
+    <h3 class="qustion_num">Question<%= @question_num%></h3>
     <h4><%= @question.text %></h4>
     <% @choices.each do |choice| %>
     <button class = "btn btn-outline-primary">
