@@ -2,5 +2,6 @@
     <h3 class="qustion_num">あなたにオススメのブランド</h3>
     <% @brands.each do |brand| %>
         <p><%= brand.name %></p>
+        <img src="/images/<%=brand.image_name%>">
     <% end %>
 </div>
