@@ -14,13 +14,13 @@
         <% end %>
     </div>
 <% else %>
-    <div class = "container question-field">
+    <div class = "container q1-page">
         <h3 class="qustion_num">Question<%= @question_num%></h3>
         <h4><%= @question.text %></h4>
         <% @choices.each do |choice| %>
-        <button class = "btn btn-outline-primary">
+        <div class = "question1-choice">
             <%= link_to "#{choice.text}", "/questions/#{choice.id+1}", method: :get %>
-        </button>
+        </div>
         </br>
         <% end %>
         <%= link_to :back do%>
