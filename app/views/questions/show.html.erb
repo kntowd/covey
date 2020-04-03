@@ -1,5 +1,5 @@
 
-
+<% if @question_num == 1 %>
     <div class = "container q1-page">
         <h3 class="qustion_num">Question<%= @question_num%></h3>
         <h4><%= @question.text %></h4>
@@ -13,7 +13,21 @@
             <button class = "btn btn-outline-light">戻る</button>
         <% end %>
     </div>
-
+<% else %>
+    <div class = "container question-field">
+        <h3 class="qustion_num">Question<%= @question_num%></h3>
+        <h4><%= @question.text %></h4>
+        <% @choices.each do |choice| %>
+        <button class = "btn btn-outline-primary">
+            <%= link_to "#{choice.text}", "/questions/#{choice.id+1}", method: :get %>
+        </button>
+        </br>
+        <% end %>
+        <%= link_to :back do%>
+            <button class = "btn btn-outline-success">戻る</button>
+        <% end %>
+    </div>
+<% end %>
 
 
 
