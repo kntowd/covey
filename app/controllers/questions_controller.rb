@@ -4,11 +4,11 @@ class QuestionsController < ApplicationController
             @question_num = 1
             @question = Question.find(1)
             @choices = @question.choices
-        elsif params.require(:id).to_i >= 2 && params.require(:id).to_i <=5
+        elsif params.require(:id).to_i >= 2 && params.require(:id).to_i <=6
             @question_num = 2
             @question = Question.find(params.require(:id).to_i+14)
             @choices = @question.choices
-        elsif params.require(:id).to_i >= 6
+        elsif params.require(:id).to_i >= 7
             @brands = Choice.find(params.require(:id).to_i-1).brands
             render("brand/show")
         end
