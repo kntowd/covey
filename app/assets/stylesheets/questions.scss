@@ -3,9 +3,19 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .question-field{
+    margin:0 auto;
     background-color:white;
     height:80vh;
+    width:800px;
     border-radius:15px;
+    padding:20px;
+    img{
+        
+    }
+}
+.brand-name{
+    font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+    font-size: 26px;
 }
 
 .question1-choice{
