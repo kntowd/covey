@@ -1,18 +1,18 @@
-<div class = "question-field">
-    <h3 class="qustion_num">あなたにオススメのブランド</h3>
-    <% @brands.each do |brand| %>
-        <p class="brand-name"><%= brand.name %></p>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <p><%= brand.text %></p>
-                </div>
-                <div class="col-md-4">
-                    <a href="<%= brand.brand_url%>">
-                        <img src="/images/<%=brand.image_name%>">
-                    </a>
-                </div>
+<div class="container">
+    <div class = "question-field">
+        <h3 class="qustion_num">あなたにオススメのブランド</h3>
+        <% @brands.each do |brand| %>
+            <p class="brand-name"><%= brand.name %></p>
+            <div class="parent">
+                    <div class="child brand-text">
+                        <p><%= brand.text %></p>
+                    </div>
+                    <div class="brand_img child">
+                        <a href="<%= brand.brand_url%>">
+                            <img src="/images/<%=brand.image_name%>">
+                        </a>
+                    </div>
             </div>
-        </div>
-    <% end %>
+        <% end %>
+    </div>
 </div>
